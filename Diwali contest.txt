@@ -1,0 +1,8 @@
+n=int(input())
+p=int(input())
+total=240-p
+time=0
+while(time<n):
+total=total-time*5
+time+=1
+print(time)
