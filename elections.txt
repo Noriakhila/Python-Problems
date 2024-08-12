@@ -1,0 +1,14 @@
+n=int(input())
+arr=list(map(int,input().split()))
+d={}
+for i in arr:
+if i in d:
+d[i]=d[i]+1
+else:
+d[i]=1
+sub=list(d.items())
+sub.sort(key=lambda ele:ele[1])
+if sub[-1][1]>sub[-2][1]:
+print(sub[-1][0])
+else:
+print(-1)
